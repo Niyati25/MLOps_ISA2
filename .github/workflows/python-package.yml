@@ -32,7 +32,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t giselle06/web-application:latest .
+      run: docker build -t giselle06/mlops_isa2:latest .
 
     - name: Push Docker image
-      run: docker push giselle06/web-application:latest
+      run: docker push giselle06/mlops_isa2:latest
